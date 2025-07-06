@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave {
+  animation: waveMove 10s linear infinite;
+  background: red; /* just to check if the class is applying */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeIn 1s ease-out forwards;
+}
