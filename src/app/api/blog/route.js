@@ -1,4 +1,5 @@
 import db from "../../../../lib/db";
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   const blogs = db.prepare("SELECT * FROM blog_posts ORDER BY created_at DESC").all();

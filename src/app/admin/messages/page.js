@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 export default async function AdminMessagesPage() {
     const res = await fetch("http://localhost:3000/api/contact", { cache: "no-store" });
     const messages = await res.json();

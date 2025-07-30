@@ -1,6 +1,7 @@
 import db from "../../../../../lib/db";
 import bcrypt from "bcrypt";
 import { generateToken } from "../../../../../lib/auth";
+export const dynamic = 'force-dynamic';
 
 export async function POST(req) {
   try {
